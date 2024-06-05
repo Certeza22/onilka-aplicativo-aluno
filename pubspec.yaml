@@ -1,0 +1,78 @@
+name: sme_app_aluno
+description: SME Aplicativo do Aluno
+
+version: 1.4.13+13
+
+environment:
+  sdk: '>=3.1.4 <4.0.0'
+
+scripts:
+  pget: flutter pub get
+  brunner: flutter pub run build_runner build
+  fclean: flutter clean
+  icons: flutter pub run flutter_launcher_icons:main
+
+dependencies:
+  shimmer: ^3.0.0
+  percent_indicator: ^4.2.3
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  provider: ^6.0.5
+  http: ^1.1.0
+  auto_size_text: ^3.0.0
+  font_awesome_flutter: ^10.6.0
+  connectivity_plus: ^6.0.1
+  mobx: ^2.2.1
+  flutter_mobx: ^2.1.0+1
+  brasil_fields: ^1.14.1
+  bi_nif_validator: ^2.0.0
+  json_serializable: ^6.7.1
+  json_annotation: ^4.8.1
+  firebase_messaging: ^14.6.7
+  firebase_analytics: ^10.6.1
+  intl: ^0.19.0
+  flutter_html: ^3.0.0-beta.2
+  flutter_widget_from_html_core: ^0.14.3
+  
+  device_info_plus: ^10.0.1
+  url_launcher: ^6.1.14
+  string_validator: ^1.0.2
+  email_validator: ^2.1.17
+  sentry: ^8.2.0
+  awesome_dialog: ^3.1.0
+  sqflite: ^2.3.0
+  path: ^1.8.3 
+  local_auth: ^2.1.7 
+  background_fetch: ^1.2.1
+  hexcolor: ^3.0.1
+  get_it: ^7.6.4
+  shared_preferences: ^2.2.2
+  extended_masked_text: ^3.0.0
+  dio: ^5.3.3
+  grouped_list: ^5.1.2
+  flutter_easyloading: ^3.0.5
+  getwidget: ^4.0.0
+  get_ip_address: ^0.0.6
+  firebase_core: ^2.19.0
+  html: ^0.15.4
+  package_info_plus: ^8.0.0
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mobx_codegen: ^2.4.0 
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.6 
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+   - assets/images/
+   - config/app_config.json
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/icon.png"
